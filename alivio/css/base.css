@@ -1,6 +1,7 @@
 @import url('./fonts.css');
 @import url('./header.css');
 @import url('./home.css');
+@import url('./how-it-works.css');
 
 body {
     font-family: 'Lato', sans-serif;
