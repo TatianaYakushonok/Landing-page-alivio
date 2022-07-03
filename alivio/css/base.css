@@ -1,5 +1,6 @@
 @import url('./fonts.css');
 @import url('./header.css');
+@import url('./home.css');
 
 body {
     font-family: 'Lato', sans-serif;
@@ -12,9 +13,19 @@ body {
     padding: 20px 50px;
     font-size: 20px;
     font-weight: 400;
+    line-height: 25px;
     color: #fff;
+    border: 2px solid transparent;
     border-radius: 4px;
     background-color: #019960;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #019960;
+    border: 2px solid #019960;
+    background-color: #fff;
 }
 
 /* Utility */
