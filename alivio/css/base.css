@@ -2,6 +2,7 @@
 @import url('./header.css');
 @import url('./home.css');
 @import url('./how-it-works.css');
+@import url('./story.css');
 
 body {
     font-family: 'Lato', sans-serif;
