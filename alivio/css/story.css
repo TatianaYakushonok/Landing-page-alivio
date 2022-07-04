@@ -5,8 +5,9 @@
 }
 
 .story-container {
-    max-width: 1507px;
+    max-width: 1536px;
     margin: 0 auto;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
