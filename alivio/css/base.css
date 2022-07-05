@@ -13,6 +13,12 @@ body {
     color: #424242;
 }
 
+@media (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+}
+
 .btn {
     padding: 20px 50px;
     font-size: 20px;
@@ -30,6 +36,12 @@ body {
     color: #019960;
     border: 2px solid #019960;
     background-color: #fff;
+}
+
+@media (max-width: 991px) {
+    .btn {
+        padding: 15px 30px;
+    }
 }
 
 /* Utility */
@@ -56,4 +68,10 @@ body {
     width: 1400px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
 }

@@ -39,3 +39,23 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 991px) {
+    .home {
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .home-title {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .home-subtitle {
+        margin-bottom: 30px;
+    }
+
+    .home-bg--img {
+        opacity: .5;
+    }
+}
