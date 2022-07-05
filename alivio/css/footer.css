@@ -1,0 +1,39 @@
+.footer {
+    padding: 105px 0 144px;
+    color: #fff;
+    background-color: #245852;
+}
+
+.footer-logo {
+    width: 106px;
+    height: 30px;
+    margin-bottom: 74px;
+}
+
+.footer-img {
+    width: 106px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: all .3s ease-in-out;
+}
+
+.footer-img:hover {
+    filter: brightness(100%);
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.footer-link {
+    transition: all .3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #019960;
+}

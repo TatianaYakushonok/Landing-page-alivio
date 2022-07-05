@@ -4,6 +4,7 @@
 @import url('./how-it-works.css');
 @import url('./story.css');
 @import url('./product.css');
+@import url('./footer.css');
 
 body {
     font-family: 'Lato', sans-serif;
