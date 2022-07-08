@@ -1,0 +1,88 @@
+@import url('./fonts.css');
+@import url('./header.css');
+@import url('./home.css');
+@import url('./how-it-works.css');
+@import url('./story.css');
+@import url('./product.css');
+@import url('./footer.css');
+@import url('./mobile-nav-button.css');
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #424242;
+    overflow-x: hidden;
+}
+
+@media (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+.btn {
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    background-color: #019960;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #019960;
+    border: 2px solid #019960;
+    background-color: #fff;
+}
+
+@media (max-width: 991px) {
+    .btn {
+        padding: 15px 30px;
+    }
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+/* Grid */
+
+.container {
+    width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
+}
