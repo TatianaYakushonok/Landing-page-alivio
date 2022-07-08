@@ -132,6 +132,12 @@
     max-width: 530px;
 }
 
+@media (max-width: 1399px) {
+    .product {
+        padding: 90px 0;
+    } 
+}
+
 @media (max-width: 1299px) {
 
     .product {

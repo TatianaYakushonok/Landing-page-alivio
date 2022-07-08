@@ -1,20 +1,49 @@
+/*================= MOBILE NAV ====================*/
+
 const mobileNavButton = document.querySelector('.mobile-nav-button');
-const mobileNaIcon = document.querySelector('.mobile-nav-button__icon');
-const headerNav = document.querySelector('.header-nav');
+const mobileNavIcon = document.querySelector('.mobile-nav-button__icon');
+const headerNav = document.querySelector('.header-item');
 const headerButton = document.querySelector('.header-button');
 
 mobileNavButton.addEventListener('click', function() {
-    mobileNaIcon.classList.toggle('active');
+    mobileNavIcon.classList.toggle('active');
+    headerNav.classList.toggle('active');
+    headerButton.classList.toggle('active');
+    document.body.classList.toggle('no-scroll');
+    /*window.addEventListener('scroll', function() {return false;});*/
+})
 
-    if(headerNav.classList.contains('active')) {
-        headerNav.classList.remove('active');
-    } else {
-        headerNav.classList.add('active');
+/*==================== VIDEO ======================*/
+
+const videoStoryButton = document.querySelector('#video-story-button');
+const videoStoryIco = document.querySelector('.story-iconplay');
+const videoStory = document.querySelector('#video-story');
+const overlay = document.querySelector('.story-video-overlay');
+
+videoStoryButton.addEventListener('click', function() {
+
+    function toggleOverlay(event) {
+        if(event.type === 'mouseleave') {
+            overlay.classList.add('hidden');
+            videoStoryIco.classList.add('hidden');
+        } else {
+            overlay.classList.remove('hidden');
+            videoStoryIco.classList.remove('hidden');
+        }
     }
-    
-    if(headerButton.classList.contains('active')) {
-        headerButton.classList.remove('active');
+
+    if(videoStory.paused) {
+        videoStory.play();
+        videoStoryIco.src = "./img/ico_pause.svg";
+
+        videoStoryIco.onmouseleave = toggleOverlay;
+        videoStoryIco.onmouseenter = toggleOverlay;
+
     } else {
-        headerButton.classList.add('active');
+        videoStory.pause();
+        videoStoryIco.src = "./img/ico-play.svg";
+
+        videoStoryIco.onmouseleave = null;
+        videoStoryIco.onmouseenter = null;
     }
 })

@@ -113,6 +113,20 @@
 
 @media (max-width: 1399px) {
     .how-it-works {
+        padding-top: 85px;
+    }
+
+    .how-it-works-steps {
+        gap: 50px;
+    }
+
+    .how-it-works-header {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .how-it-works {
         padding: 60px 0 30px;
     }
 
@@ -127,10 +141,6 @@
 
     .how-it-works-paragraf {
         padding-top: 25px;
-    }
-
-    .how-it-works-steps {
-        gap: 80px;
     }
 
     .step-item:nth-child(2) {

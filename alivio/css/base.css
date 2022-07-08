@@ -7,11 +7,17 @@
 @import url('./footer.css');
 @import url('./mobile-nav-button.css');
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #424242;
+    overflow-x: hidden;
 }
 
 @media (max-width: 991px) {
@@ -49,6 +55,10 @@ body {
 
 .none {
     display: none !important;
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }
 
 .visually-hidden {

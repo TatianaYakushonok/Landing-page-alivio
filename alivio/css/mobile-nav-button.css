@@ -10,22 +10,22 @@
     z-index: 999;
     width: 40px;
     height: 30px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
 .mobile-nav-button__icon {
     position: relative;
-    display: none;
+    display: block;
     width: 40px;
     height: 5px;
-    background-color: #000;
+    background-color: #424242;
 }
 
 @media (max-width: 991px) {
-    .mobile-nav-button__icon {
-        display: block;
+    .mobile-nav-button {
+        display: flex;
     }
 }
 
@@ -35,7 +35,7 @@
     content: '';
     width: 40px;
     height: 5px;
-    background-color: #000;
+    background-color: #424242;
     transition: transform .15s ease-in, top .15s ease-in .15s;
 }
 
